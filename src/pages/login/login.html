@@ -1,0 +1,61 @@
+<!-- <ion-header>
+	<ion-navbar>
+		<button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+		<ion-title>Login</ion-title>
+	</ion-navbar>
+</ion-header> -->
+
+<ion-content>
+	<div class="logo">
+		<img src="assets/img/appicon.png" alt="Giveaway logo">
+	</div>
+
+	<form [formGroup]="formgroup" (ngSubmit)="loginData(formgroup.value)">
+		<!-- <ion-list no-lines> -->
+			<ion-item>
+				<ion-label floating>Email</ion-label>
+				<ion-input type="text" formControlName="email"></ion-input>
+			</ion-item>
+			<p *ngIf="email.hasError('required') && formgroup.controls.email.touched" color="danger" padding-left>Email cannotss be empty</p>
+
+			<ion-item>
+				<ion-label floating>Password</ion-label>
+				<ion-input type="password" formControlName="password"></ion-input>
+			</ion-item>
+
+			<p *ngIf="password.hasError('required') && formgroup.controls.password.touched" danger padding-left>Password cannot be empty</p>
+			
+		<!-- </ion-list> -->
+
+		<ion-row responsive-sm>
+			<ion-col>
+				<div padding>
+					<button id="loginBtn" ion-button [disabled]="!formgroup.valid" type="submit" block>Sign In</button>
+				</div>
+			</ion-col>
+			
+		</ion-row>
+		
+		
+	</form>
+	<ion-row responsive-sm>
+
+			<ion-col>
+				<p style="color: white;"> Don't have an account? <a (click)="onSignup2()" style="color: white;font-weight: bold;">Sign Up</a></p>
+				<p>or</p>
+
+			</ion-col>
+		</ion-row>
+	<ion-row responsive-sm>
+			<ion-col>
+				<div padding>
+					<button id="facebookBtn" style="border-radius: 50px;" ion-button icon-left block (click) = "loginWithFacebook()"><ion-icon name="logo-facebook"></ion-icon> Login with facebook</button>
+					
+				</div>
+			</ion-col>
+			
+		</ion-row>
+
+</ion-content>

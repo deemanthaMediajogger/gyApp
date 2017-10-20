@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-navbar color="gyback">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>My Profile</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="outer-content">
+  <div padding-top text-center *ngIf="full_name">
+    <img src="assets/img/avatar-1.png"  alt="avatar">
+    <h2>{{full_name}}</h2>
+
+    <ion-list inset>
+      <button ion-item (click)="updatePicture()">Update Picture</button>
+      <button ion-item (click)="changeUsername()">Change Username</button>
+      <button ion-item (click)="changePassword()">Change Password</button>
+      <button ion-item (click)="support()">Support</button>
+      <button ion-item (click)="logout()">Logout</button>
+    </ion-list>
+  </div>
+</ion-content>

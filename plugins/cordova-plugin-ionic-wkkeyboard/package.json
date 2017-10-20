@@ -1,0 +1,96 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "cordova-plugin-ionic-wkkeyboard@^1.1.11",
+        "scope": null,
+        "escapedName": "cordova-plugin-ionic-wkkeyboard",
+        "name": "cordova-plugin-ionic-wkkeyboard",
+        "rawSpec": "^1.1.11",
+        "spec": ">=1.1.11 <2.0.0",
+        "type": "range"
+      },
+      "/Users/MacBook/Documents/Mobile app/ionic-conference-app-master/node_modules"
+    ]
+  ],
+  "_from": "cordova-plugin-ionic-wkkeyboard@>=1.1.11 <2.0.0",
+  "_id": "cordova-plugin-ionic-wkkeyboard@1.1.11",
+  "_inCache": true,
+  "_location": "/cordova-plugin-ionic-wkkeyboard",
+  "_nodeVersion": "8.5.0",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/cordova-plugin-ionic-wkkeyboard-1.1.11.tgz_1507651751512_0.5365345070604235"
+  },
+  "_npmUser": {
+    "name": "manucorporat",
+    "email": "manu.mtza@gmail.com"
+  },
+  "_npmVersion": "5.4.2",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "cordova-plugin-ionic-wkkeyboard@^1.1.11",
+    "scope": null,
+    "escapedName": "cordova-plugin-ionic-wkkeyboard",
+    "name": "cordova-plugin-ionic-wkkeyboard",
+    "rawSpec": "^1.1.11",
+    "spec": ">=1.1.11 <2.0.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/cordova-plugin-ionic-wkkeyboard/-/cordova-plugin-ionic-wkkeyboard-1.1.11.tgz",
+  "_shasum": "5ed4fe2197e68f94e94047405b6a80f118b0f1b2",
+  "_shrinkwrap": null,
+  "_spec": "cordova-plugin-ionic-wkkeyboard@^1.1.11",
+  "_where": "/Users/MacBook/Documents/Mobile app/ionic-conference-app-master/node_modules",
+  "author": {
+    "name": "Apache Software Foundation"
+  },
+  "bugs": {
+    "url": "https://github.com/ionic-team/cordova-plugin-ionic-keyboard/issues"
+  },
+  "dependencies": {},
+  "description": "Ionic Keyboard Plugin",
+  "devDependencies": {
+    "np": "^2.16.0",
+    "sync-cordova-xml": "^0.4.0"
+  },
+  "directories": {},
+  "dist": {
+    "integrity": "sha512-LaVHpMOGe+4M/Ghmpk0eGBsAWQaDCzxyAvmSEZKPAKyPGrdBoShTO+idjmwiB9OIl7373YVTbJWg2bDTHcCldw==",
+    "shasum": "5ed4fe2197e68f94e94047405b6a80f118b0f1b2",
+    "tarball": "https://registry.npmjs.org/cordova-plugin-ionic-wkkeyboard/-/cordova-plugin-ionic-wkkeyboard-1.1.11.tgz"
+  },
+  "gitHead": "149f0963d8ad2bde14856ff4ee0600587dcb3d0f",
+  "homepage": "https://github.com/ionic-team/cordova-plugin-ionic-keyboard#readme",
+  "keywords": [
+    "cordova",
+    "keyboard",
+    "ecosystem:cordova",
+    "cordova-ios",
+    "cordova-android"
+  ],
+  "license": "Apache 2.0",
+  "maintainers": [
+    {
+      "name": "manucorporat",
+      "email": "manu.mtza@gmail.com"
+    }
+  ],
+  "name": "cordova-plugin-ionic-wkkeyboard",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ionic-team/cordova-plugin-ionic-keyboard.git"
+  },
+  "scripts": {
+    "deploy": "np --yolo",
+    "sync_plugin_xml": "sync-cordova-xml package.json plugin.xml --output=plugin.xml",
+    "version": "npm run sync_plugin_xml && git add plugin.xml"
+  },
+  "version": "1.1.11"
+}

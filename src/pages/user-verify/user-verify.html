@@ -1,0 +1,31 @@
+
+
+<ion-content padding>
+<div class="logo">
+		<img src="assets/img/appicon.png" alt="Ionic logo">
+	</div>
+
+	<div>
+		<h3>Verification</h3>
+		<p>We sent verification code to your email {{ email_add }}. Enter that code here to continue.</p>
+	</div>
+
+    
+<form [formGroup]="formgroup" (ngSubmit)="verifyUser(formgroup.value)">
+<ion-input  type="hidden" name="email" ([ngModel])="email" formControlName="email" value="{{ email_add }}" ></ion-input>
+  <ion-item>
+    <ion-label floating>Verification Code</ion-label>
+    <ion-input required type="text" name="verification_code" ([ngModel])="verification_code" formControlName="verification_code" ></ion-input>
+
+  </ion-item>
+   <p *ngIf="!formgroup.controls.verification_code.valid && formgroup.controls.verification_code.touched" danger padding-left>Verification code cannot be empty</p>
+
+
+<div padding>
+      <button id="verifyBtn" ion-button [disabled]="!formgroup.valid" type="submit" block>Verify</button>
+    </div>
+ 
+</form>
+
+
+</ion-content>
